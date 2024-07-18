@@ -1,0 +1,123 @@
+/*
+    This page has information on the song "Bound for the Floor" by Local H.
+    
+    Author: Jake Gomez
+    Date: 7/17/21
+    File name: music_styles.css
+
+    I used W3schools to figure out how write some of this
+
+    <div> https://www.w3schools.com/html/html_div.asp
+    <br>  https://www.w3schools.com/tags/tag_br.asp
+    grid container https://www.w3schools.com/css/css_grid_container.asp
+
+
+ */
+
+body {
+  background-color: #ececec;
+  padding: 20px;
+  font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman,
+    serif;
+}
+
+header,
+footer,
+main,
+aside,
+article {
+  background-color: lightgray;
+  border: 1px solid #9d9d9d;
+  border-left: 2px solid black;
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+
+ul {
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
+    Times New Roman, serif;
+  list-style-type: none;
+  background-color: white;
+  padding: 6px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+img {
+  border: 1px solid black;
+  float: right;
+  margin: 8px;
+}
+
+/* clear fix for images that fall out of elements */
+header::after,
+footer::after,
+main::after,
+aside::after,
+article::after,
+p::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #ececec;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+tr,
+td {
+  padding: 6px;
+}
+
+tr th {
+  background-color: #bdbdbd;
+}
+
+#cover {
+  width: 10%;
+}
+
+.lyrics {
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#band {
+  width: 10%;
+}
+
+.grid-container > :nth-child(-n + 3) {
+  background-color: #bdbdbd;
+}
+
+.grid-container > :nth-child(n+7):nth-child(-n+9) {
+    background-color: rgb(230, 230, 230); /* I used rgb here because I could get the right color */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman,
+    serif;
+  text-align: center;
+}
